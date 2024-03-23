@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+
+    <!-- Font Ausome Link-->
+    <script src="https://kit.fontawesome.com/288ad15296.js" crossorigin="anonymous"></script>
+
+    <!-- Book CSS Link-->
+    <link rel="stylesheet" href="/CSS/Book.css">
+
+</head>
+<body>
+    <div class="container">
+        
+        <!--Navbar Start-->
+        <nav>
+            <div class="logo">
+                <h1>My Trip</h1>
+            </div>
+            <ul class="responsiveMenu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Book.html">Book</a></li>
+                <li><a href="Packages.html">Packages</a></li>
+                <li><a href="BestPlaces.html">Best Places</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <i id="bar" class="fa-solid fa-bars"></i>
+                <i id="user" class="fa-regular fa-user"></i>
+            </div>
+        </nav>
+        <!--Navbar End-->
+
+        <!--Booking Start-->
+        <div class="book" id="book">
+            <div class="head">
+                <h1>Book <span>Your Place</span></h1>
+            </div>
+            <div class="booking">
+                <img src="/Assets/Book.png" alt="error">
+                <div class="form" action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="2cce295d-3805-426b-87d0-e0f63e5935b8">  <!--  My mail access key -->
+
+                    <h2>Book Your Place Now</h2>
+                    <p>Where You Gone</p>
+                    <input type="text" placeholder="Where you Gone" id="placeName" class="contact-inputs" required>
+                    <p>Member's</p>
+                    <input type="number" value="2" class="contact-inputs" required>
+                    <p>Journey Starts ON</p>
+                    <input type="date" class="contact-inputs" required>
+                    <p>Journey Ends ON</p>
+                    <input type="date" class="contact-inputs" required>
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <!--Booking End-->
+
+        <!--Footer Start-->
+        <div class="footer">
+            <div class="text">
+                <h2>About Us</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur<br>
+                    adipisicing elit. Culpa perspiciatis <br>
+                    molestias quis, amet a, accusantium <br>
+                    molestiae, error nihil illum eos earum <br>
+                    dolorum obcaecati maiores ipsa ducimus <br>
+                    esse reprehenderit! Animi, officia.<br>
+                </p>
+                
+            </div>
+            <div class="text">
+                <h2>Tour</h2>
+                <p>Quality</p>
+                <p>Price</p>
+                <p>Affordable</p>
+                <p>Exchange</p>
+            </div>
+            <div class="text">
+                <h2>Travell</h2>
+                <p>Good Home</p>
+                <p>Good</p>
+                <p>Quality</p>
+                <p>Quality</p>
+            </div>
+            <div class="text">
+                <h2>Our Branches</h2>
+                <p>Kukatpally</p>
+                <p>Banjarahills</p>
+                <p>Secundrabad</p>
+                <p>Dilsuknagar</p>
+            </div>
+        </div>
+        <!--Footer End-->
+
+
+
+        
+        <!--Login Page Start-->
+        <div class="loginPage">
+            <input type="text" placeholder="Enter Your Email" id="email"><br>
+            <input type="password" placeholder="Enter Your Password" id="password"><br>
+            <button id="loginBtn">Log In</button>
+        </div>
+        <!--Login Page End-->
+    </div>
+
+
+    <!--Logine Page Java Script Link-->
+    <script src="/JS/LoginPage.js"></script>
+
+    <!-- Java Script code and css code for only nav bar responsive Start-->
+
+    <script>
+        document.getElementById("bar").addEventListener("click", function () {
+            var mobileMenu = document.querySelector(".responsiveMenu");
+            mobileMenu.classList.toggle("show");
+        });
+    </script>
+    
+    <style>
+        /* Add CSS for hiding/showing the mobile menu */
+        .mobile-menu {
+            display: none;
+        }
+
+        /* Show the mobile menu on smaller screens */
+        @media only screen and (max-width: 900px) {
+            ul {
+                display: none;
+            }
+
+            ul.show {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: orange;
+                width: 50%;
+                text-align: center;
+            }
+
+            ul.show li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+
+    <!-- Java Script code and css code for only nav bar responsive End-->
+
+</body>
+</html>

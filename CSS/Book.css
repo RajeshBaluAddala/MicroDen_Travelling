@@ -1,0 +1,205 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;900&display=swap');*/
+
+/* Common Styles for All Start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* Common Styles for All End*/
+
+/* Navbar Styles Start*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: orange;
+    color: white;
+    padding: 22px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    margin-inline: 20px;
+    color: white;
+    font-size: 20px;
+}
+ul li a:hover{
+    color: black;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    cursor: pointer;
+}
+.icons i{
+    font-size: 25px;
+    color: black;
+}
+.logo{
+    font-size: 20px;
+    color: black;
+}
+#bar{
+    display: none;
+}
+/* Navbar Styles End*/
+
+
+
+/*Book Styles Start*/
+.book{
+    padding-top: 60px;
+}
+.head{
+    text-align: center;
+    padding: 50px;
+}
+.head span{
+    color: orange;
+}
+.booking{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.booking img{
+    width: 550px;
+    border-radius: 5px;
+}
+.form{
+    margin-inline: 28px;
+    width: 320px;
+    background-color: #fff;
+    padding: 22px;
+    box-shadow: 0px 4px 4px 6px rgb(230, 229, 229);
+    border-radius: 5px;
+}
+.form input{
+    width: 90%;
+    padding: 8px;
+    font-size: 17px;
+    margin-top: 3px;
+}
+.form p{
+    margin-top: 20px;
+}
+.form button{
+        width: 80px;
+        height: 28px;
+        background-color: orange;
+        color: white;
+        font-size: 16px;
+        margin-top: 22px;
+        border: none;
+}
+/*Book Styles End*/
+
+/* Footer Styles Start */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(106, 103, 103);
+    color: rgb(255, 255, 255);
+    padding: 66px;
+    margin-top: 55px;
+}
+
+.text p{
+    margin-top: 11px;
+}
+/* Footer Styles End */
+
+
+/* Login Page Styles Start */
+.loginPage{
+    display: none;
+}
+.active1{
+    display: block;
+    width: 300px;
+    background-color: #fff;
+    padding: 11px;
+    box-shadow: 0px 4px 4px 6px rgb(227, 226, 226);
+    position: fixed;
+    top: 12%;
+    right: 2%;
+}
+.active1 input{
+    width: 90%;
+    padding: 6px;
+    margin-top: 13px;
+}
+.active1 button{
+    width: 80px;
+    height: 28px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 15px;
+}
+/* Logine Page Styles End */
+
+
+
+/* Responsive for Mobile*/
+@media only screen and (max-width:576px){
+
+    ul{
+        display: none;
+    }
+    #bar{
+        display: block;
+        margin-right: 30px;
+    }
+
+    .booking{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .booking img{
+        width: 320px;
+        border-radius: 5px;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer .text{
+        margin: 30px 0px;
+    }
+    
+
+}
+
+/* Responsive for Tab*/
+@media only screen and (max-width:900px){
+    ul{
+        display: none;
+    }
+    #bar{
+        display: block;
+        margin-right: 30px;
+    }
+}
+
+
+
